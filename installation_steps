@@ -113,7 +113,9 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 git config --list
 
-
+git status
+git add .
+git commit -am "message here"
 
 version2 by satish
 
