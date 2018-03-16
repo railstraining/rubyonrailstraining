@@ -1,3 +1,5 @@
+This is master branch
+
 1.migrations are part of active record
    active record is  a ORM(object Relational Mapping)
      ORM:: it maps object oriented concepts inti database concepts
