@@ -1,0 +1,47 @@
+1.migrations are part of active record
+   active record is  a ORM(object Relational Mapping)
+     ORM:: it maps object oriented concepts inti database concepts
+               table to class
+               row of a tbale is mapped to object of a class
+               cell values are mapped to attributes of a object
+2.migration naming allways starts with timestamp
+
+3. migration are .rb files
+
+4. migrations resides in db/migrate directory
+
+5.migration are created with following syntax
+
+    rails g migration create_parents name:string age:integer 
+    rake db:migrate
+    rake db:rollback
+    rake db:drop
+    rake db:setup    =  rake db:create;rake db:migrate;rake db:seed
+
+6.migration for adding column to table
+
+   rails g migration add_full_name_to_users full_name:string
+7.remove column migration  
+
+   rails g migration remove_full_name_from_users full_name:string
+8.rename table migration
+   rails g migration rename_users_to_users_updated
+
+     def change
+       rename_table :users, :users_updated
+     end
+9.drop table migration
+  rails g migration drop_users_updated
+   def change
+     drop_table :users_updated
+   end
+10.change datatyape migration 
+    rails g migration change_name_to_integer
+     def change
+       change_column :my_table, :my_column, :my_new_type
+     end
+11. create stand alone migration
+
+
+
+
