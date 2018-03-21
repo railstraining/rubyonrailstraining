@@ -1,0 +1,102 @@
+control structures
+
+1.decision makings
+  a. if
+    SN:
+
+     if condition
+       st1
+       st2
+     end
+
+   ex:  
+    a=10
+    b=11
+
+    if a>b
+      puts "helloo hyderabad"
+    end 
+    
+    if a<b
+      puts "helloo secunderabad"
+    end
+
+
+
+  b. if else
+   SN:
+
+    if condition1
+
+      st1
+    else
+
+      st2
+    end 
+
+
+   wirte a program to find maxximum of two numbers
+
+   a=10
+   b=15
+   c=18
+   if a>b
+     puts "a is maximum in a,b"
+     if a>c
+       puts "a is maximum in a,b,c"
+     end
+   else
+     puts "b is maximum in a,b"
+     if b>c
+       puts "c is maximum in a,b,c"
+     end 
+   end
+
+
+ c. elsif
+  d. case
+  e. nested if
+     SN:
+
+      if condition1
+         st1
+         st2
+        if condition2
+           st3
+           st4
+          if condition3
+            st5
+            st6
+          end
+        end
+      end
+
+    ex:
+
+      a=10
+      b=11
+      c=5
+
+     if a < b
+       puts "one"
+       if a>c
+          puts "two"
+         if c>b
+          puts "three"
+         end
+       end
+     end
+   
+  g. nested if else
+  e. terninary operator
+  h. unless
+  i. uless else
+  j. nested unless
+
+2.loops
+  a. for
+  b. while
+  c. do while
+  e.until
+  f.foreach
+  g.times
